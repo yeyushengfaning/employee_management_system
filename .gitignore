@@ -9,7 +9,10 @@ dependency-reduced-pom.xml
 buildNumber.properties
 
 # Maven wrapper
-/.mvn/wrapper/maven-wrapper.jar
+# Commit mvnw, mvnw.cmd and the files under .mvn/wrapper/ (maven-wrapper.jar, maven-wrapper.properties) so others can build without installing Maven.
+/mvnw
+/mvnw.cmd
+# Do NOT ignore .mvn/wrapper/* if you want to include the wrapper in the repo
 
 # IntelliJ IDEA
 /.idea/
@@ -67,10 +70,9 @@ pnpm-debug.log*
 *.tar.gz
 
 # IDE-specific
-.idea/
+# IntelliJ files are already ignored above; keep this section lightweight
 
 # Misc
 /.gradle/
 
 # Keep this file in repo
-
