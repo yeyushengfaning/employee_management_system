@@ -1,0 +1,1 @@
+import{a as e}from"./index-DxMrShXy.js";function s(){return e.get("/depts")}function n(t){return e.get(`/depts/${t}`)}function r(t){return e.post("/depts",t)}function u(t){return e.put("/depts",t)}function a(t){return e.delete("/depts",{params:{id:t}})}export{a as d,n as g,s as l,r as s,u};

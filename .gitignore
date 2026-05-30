@@ -1,0 +1,77 @@
+# Maven
+/target/
+/pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Maven wrapper
+/.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Generated sources
+/generated-sources/
+/generated-test-sources/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Logs and temp files
+*.log
+logs/
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor swap files
+*~
+*.swp
+
+# Node / frontend
+/frontend/node_modules/
+/frontend/dist/
+/node_modules/
+/npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# Ignore build output and archives
+*.zip
+*.tar.gz
+
+# IDE-specific
+.idea/
+*.iml
+
+# Misc
+/.gradle/
+
+# Keep this file in repo
+
