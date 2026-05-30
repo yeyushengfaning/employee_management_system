@@ -68,7 +68,6 @@ pnpm-debug.log*
 
 # IDE-specific
 .idea/
-*.iml
 
 # Misc
 /.gradle/
