@@ -17,7 +17,8 @@
         </template>
       </el-table-column>
     </el-table>
-
+<!--其次，v-model:visible 和 v-model="..." 并不是绝对的“错/对”关系——哪一种可用取决于组件对 v-model 的 API 定义（prop 名称和触发的 update 事件）。-->
+<!--有些组件定义了 visible 作为其可绑定的 prop（支持 v-model:visible / update:visible），而很多 Vue 3 + 组件库（或其新版本）使用统一的 modelValue/update:modelValue，这时普通的 v-model 是正确的用法。-->
     <el-dialog v-model="formVisible" title="部门" @closed="onDialogClosed">
       <el-form :model="form" label-width="90px">
         <el-form-item label="名称"><el-input ref="nameInput" v-model="form.name" /></el-form-item>
