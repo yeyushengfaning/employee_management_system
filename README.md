@@ -13,8 +13,9 @@
 
 ## 2. 启动前的 MySQL 配置
 
+- **<u>本项目已经配置了MySQL，不需要手动建表，直接运行后端即可自动建表并插入初始数据。</u>**
 - 建议 MySQL 版本：8.0（也兼容 5.7），字符集建议使用 `utf8mb4`。
-- 可以直接执行`db/`内的sql文件(前提是已经了ems创建数据库)
+- 可以直接执行`db/`内的sql文件
 - 在 MySQL 中执行下面 SQL：
 
 ```sql
@@ -129,7 +130,7 @@ FLUSH PRIVILEGES;
 ```yaml
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/ems?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/ems?createDatabaseIfNotExist=true
     username: root
     password: 123456
 ```
