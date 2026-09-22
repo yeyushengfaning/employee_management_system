@@ -11,8 +11,8 @@
     <groupId>com.yeyu</groupId>
     <artifactId>ems</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>tlias</name>
-    <description>tlias</description>
+    <name>ems</name>
+    <description>ems</description>
     <url/>
     <licenses>
         <license/>
@@ -117,6 +117,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+<!--        用 Flyway 自动管理是否已经执行过数据库脚本，避免重复执行-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+<!--        Flyway 10.x 及以上：必须单独添加 flyway-mysql 模块，否则报你遇到的这个错-->
+<!--        Flyway 9.x 及以下：MySQL 支持内置在 flyway-core 中，不需要额外模块-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-mysql</artifactId>
         </dependency>
     </dependencies>
 

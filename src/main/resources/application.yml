@@ -9,11 +9,16 @@ spring:
     url: jdbc:mysql://localhost:3306/ems?createDatabaseIfNotExist=true
     username: root
     password: 123456
-  sql:
-    init:
-      mode: always
-      schema-locations: classpath:db/schema.sql
-      continue-on-error: true
+#  sql:
+#    init:
+#      mode: always
+#      schema-locations: classpath:db/V1__init.sql
+#      continue-on-error: true
+# 使用flyway进行数据库版本管理
+  flyway:
+    enabled: true
+    locations: classpath:db
+    baseline-on-migrate: true
 
 #mybatis配置
 mybatis:
